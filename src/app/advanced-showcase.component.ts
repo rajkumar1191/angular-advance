@@ -33,7 +33,7 @@ import { DynamicBoxComponent } from './dynamic-box.component';
     RandomValuePipe
   ],
   template: `
-  <div class="container" appHighlight="lightblue">
+  <div class="container" appHighlight="green">
     <h2>Advanced Angular Core Showcase</h2>
 
     <!-- SIGNALS -->

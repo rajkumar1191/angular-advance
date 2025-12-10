@@ -8,6 +8,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class RandomValuePipe implements PipeTransform {
   transform() {
     console.log('Impure Pipe Executed');
-    return Math.random().toFixed(4);
+    return Math.random().toFixed(4).toString();
   }
 }
