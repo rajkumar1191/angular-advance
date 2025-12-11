@@ -1,0 +1,21 @@
+<div class="container">
+  <div
+    *ngIf="loading"
+    style="padding: 6px; background: #e0e7ff; margin-bottom: 8px"
+  >
+    Loading feature module...
+  </div>
+  <!-- Top Navigation -->
+  <nav>
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/admin" routerLinkActive="active">Admin</a>
+  </nav>
+
+  <!-- Page content -->
+  <router-outlet></router-outlet>
+</div>

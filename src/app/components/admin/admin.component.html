@@ -1,0 +1,33 @@
+<h2>Admin Panel</h2>
+
+<h3>Resolved User Data</h3>
+<pre>{{ resolvedUser | json }}</pre>
+
+<h3>Edit Form</h3>
+
+<div [formGroup]="form">
+  <div>
+    <label>Name</label><br />
+    <input formControlName="name" />
+  </div>
+
+  <div>
+    <label>Email</label><br />
+    <input formControlName="email" />
+  </div>
+
+  <div>
+    <label>Role</label><br />
+    <select formControlName="role">
+      <option value="Admin">Admin</option>
+      <option value="User">User</option>
+      <option value="Editor">Editor</option>
+    </select>
+  </div>
+
+  <button (click)="save()" style="margin-top:12px">Save</button>
+</div>
+
+<hr />
+
+<a routerLink="/">Go Back</a>
