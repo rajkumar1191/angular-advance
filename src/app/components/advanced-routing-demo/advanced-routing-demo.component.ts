@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd, NavigationEnd, RouterLink } from '@angular/router';
+import { RxjsAdvancedComponent } from '../../rxjs-advanced.component';
 
 @Component({
   selector: 'app-advanced-routing-demo',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RxjsAdvancedComponent],
   templateUrl: './advanced-routing-demo.component.html'
 })
 export class AdvancedRoutingDemoComponent {

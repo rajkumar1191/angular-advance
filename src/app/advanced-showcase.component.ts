@@ -21,6 +21,7 @@ import { DelayRenderingDirective } from './delay-rendering.directive';
 import { ExpensiveMathPipe } from './expensive-math.pipe';
 import { RandomValuePipe } from './random-value.pipe';
 import { DynamicBoxComponent } from './dynamic-box.component';
+import { RxjsAdvancedComponent } from './rxjs-advanced.component';
 
 @Component({
   selector: 'app-advanced-showcase',
@@ -30,11 +31,14 @@ import { DynamicBoxComponent } from './dynamic-box.component';
     HighlightDirective,
     DelayRenderingDirective,
     ExpensiveMathPipe,
-    RandomValuePipe
+    RandomValuePipe,
+    RxjsAdvancedComponent
   ],
   template: `
   <div class="container" appHighlight="green">
     <h2>Advanced Angular Core Showcase</h2>
+
+    <app-rxjs-advanced></app-rxjs-advanced>
 
     <!-- SIGNALS -->
     <section>
