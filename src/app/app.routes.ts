@@ -4,9 +4,10 @@ import { authGuard } from './guards/auth.guard';
 import { canDeactivateGuard } from './guards/can-deactivate.guard';
 import { canMatchGuard } from './guards/can-match.guard';
 import { userResolver } from './resolvers/user.resolver';
+import { EmployeeListComponent } from './components/employee-list.component';
 
 export const routes: Routes = [
-  { path: '', component: AdvancedRoutingDemoComponent },
+  { path: '', component: EmployeeListComponent },
   {
     path: 'admin',
     loadComponent: () =>
