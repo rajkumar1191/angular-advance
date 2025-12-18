@@ -25,9 +25,16 @@
     </select>
   </div>
 
-  <button (click)="save()" style="margin-top:12px">Save</button>
+  <button (click)="save()" style="margin-top: 12px">Save</button>
 </div>
 
+<hr />
+
+<ul>
+  <li *ngFor="let emp of filteredEmployees$ | async">
+    {{ emp.name }}-{{ emp.role }}-{{ emp.id }}
+  </li>
+</ul>
 <hr />
 
 <a routerLink="/">Go Back</a>

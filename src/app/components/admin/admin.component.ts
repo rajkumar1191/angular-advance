@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { EmployeeFacade } from '../../state/employee/employee.facade';
 
 @Component({
   selector: 'app-admin',
@@ -10,9 +11,12 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './admin.component.html'
 })
 export class AdminComponent {
+  private readonly facade = inject(EmployeeFacade);
   form: FormGroup;
   resolvedUser: any;
   saved = true;
+
+  filteredEmployees$ = this.facade.employees$;
 
   constructor(private route: ActivatedRoute, private fb: FormBuilder, private router: Router) {
     this.resolvedUser = this.route.snapshot.data['user'];

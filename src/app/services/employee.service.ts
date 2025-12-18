@@ -14,17 +14,17 @@ export class EmployeeService {
       },
       {
         id: 2,
-        name: "Raj",
+        name: "Harish",
         role: "developer",
       },
       {
         id: 3,
-        name: "Raj",
+        name: "Aadhi",
         role: "developer",
       },
       {
         id: 4,
-        name: "Raj",
+        name: "Yuga",
         role: "developer",
       },
     ]).pipe(delay(1000));
