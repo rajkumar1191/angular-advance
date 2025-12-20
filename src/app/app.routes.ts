@@ -5,9 +5,10 @@ import { canDeactivateGuard } from './guards/can-deactivate.guard';
 import { canMatchGuard } from './guards/can-match.guard';
 import { userResolver } from './resolvers/user.resolver';
 import { EmployeeListComponent } from './components/employee-list.component';
+import { EmployeeComponent } from './components/employee/employee.component';
 
 export const routes: Routes = [
-  { path: '', component: EmployeeListComponent },
+  { path: '', component: EmployeeComponent },
   {
     path: 'admin',
     loadComponent: () =>

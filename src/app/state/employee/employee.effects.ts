@@ -1,6 +1,6 @@
 import { inject, Injectable } from "@angular/core";
 import { createEffect, Actions, ofType } from "@ngrx/effects";
-import { EmployeeService } from "../../services/employee.service";
+import { EmployeeService } from "../../core/services/employee.service";
 import * as EmployeeActions from "./employee.actions";
 import { catchError, map, of, switchMap } from "rxjs";
 
